@@ -1,0 +1,59 @@
+body {
+    width: 960px;
+    background-color:rgb(53, 198, 255);    
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul li {
+    display: inline;    
+}
+ul li a {
+    display: inline-block;
+    width: 80px;
+    height: 60px;    
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(86, 86, 86);    
+    line-height: 60px; 
+    /* bloquesito de codigo que se puede crear en https://neumorphism.io -- empieza aquí*/
+    border-radius: 20px;                       
+    background: linear-gradient(225deg, rgb(20, 188, 254), rgb(17, 158, 213));
+    box-shadow:  -20px 20px 60px rgb(16, 150, 201),20px -20px 60px rgb(22, 202, 255);
+    /* acaba aquí el codigo  que arme en https://neumorphism.io ------*/
+    border: 1px solid rgb(17, 158, 213) /* borde con color oscuro agregue para firmeza*/
+
+}
+ul li a:hover {
+    /* creado en https://neumorphism.io ----- */
+    border-radius: 20px;
+    background: rgb(19, 176, 237);
+    box-shadow: inset -20px 20px 60px rgb(16, 150, 201),inset 20px -20px 60px rgb(22, 202, 255);
+    /* Aquí concluye bloke d codigo creado en https://neumorphism.io */
+    border: 1px solid rgb(82, 206, 255); /* borde color clarito para simular estiramiento*/
+    color:  rgb(112, 112, 112);/* gris mas luminoso en texto  para que de sensacion de sombra*/
+}
+
+@media all and (min-width: 600px) and (max-width: 1023px) {
+
+body {
+    width: 580px;
+    height: auto;   
+} 
+
+
+} /*-------------------------------------------fin media min-600px max-1023px */
+
+@media all and (max-width: 599px) {
+
+body {
+    width: 100%; 
+    height: auto; 
+}
+} /* ----------------------------------------------final de @media max 599px.-
